@@ -1,0 +1,17 @@
+{
+  "name": "israel-under-fire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": " node ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.10.0",
+    "fastify-static": "^2.5.0",
+    "mongoose": "^5.7.11",
+    "request": "^2.88.0"
+  }
+}
