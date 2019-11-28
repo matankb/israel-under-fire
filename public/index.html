@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d206b9deab.js" crossorigin="anonymous"></script>
+
   <title>Israel Under Fire</title>
 </head>
 <body>
@@ -25,18 +28,37 @@
       <div class="stat-period">Last Month:</div>
       <div class="stat-count" id="month"></div>
     </div>
+    <div class="stat">
+      <div class="stat-period">
+        Since You First Visited:
+      </div>
+      <div class="stat-count" id="first-visit"></div>
+      <div class="info-icon" id="first-visit-info">
+        <i class="fa fa-question"></i>
+      </div>
+    </div>
   </div>
 
   <div class="explanation">
     Each time a rocket is fired into Israel, sirens go off throughout the country, and thousand of civilians - men, women, and children - are forced to run for their lives to safety.
     <div>
-      <a href="#">How is this data collected?</a>
+      <a href="#" id="about-link">How is this data collected?</a>
+    </div>
+    <div class="about">
+      This website uses official data collected from Pikud HaOref (the Israeli Home Front Command), updated every ten minutes.
+      Since Pikud HaOref only supplies data about the previous four hundred sirens, this website stores a list of every past siren since
+      {{ COLLECTION_BEGIN_DATE }} as well, and combines that data with the new data (removing duplicates) to create the final count.
+      <br /><br />
+      This website is open source:
+      <a href="https://github.com/matankb/israel-under-fire" target="_blank">View the code</a>
     </div>
   </div>
 
-  <div class="refresh-wrap">
-    <button class="refresh">Refresh Statistics (temporary)</button>
-  </div>
+  <footer>
+    Created by
+    <a href="https://matankb.github.io/" target="_blank">Matan Kotler-Berkowitz</a>
+    and Eamon Sinclair
+  </footer>
 
   <script src="script.js"></script>
 

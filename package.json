@@ -1,17 +1,22 @@
 {
   "name": "israel-under-fire",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
+  "repository": "https://github.com/matankb/israel-under-fire",
+  "author": "Matan Kotler-Berkowitz <205matan@gmail.com>",
+  "license": "MIT",
+  "private": false,
   "scripts": {
-    "start": " node ./index.js"
+    "start": "node src/index.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "fastify": "^2.10.0",
     "fastify-static": "^2.5.0",
-    "mongoose": "^5.7.11",
+    "is-json": "^2.0.1",
+    "mongoose": "^5.7.12",
+    "mustache": "^3.1.0",
+    "point-of-view": "^3.7.0",
     "request": "^2.88.0"
   }
 }
